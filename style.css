@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(33, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-color: white;
+    margin: 0;
+    height: 600px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.gameTable {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    width: 400px;
+    margin: 0;
+}
+
+.row0,
+.row1,
+.row2 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: solid;
+    border: none;
+    height: 25.33%;
+    margin-bottom: 4px;
+}
+
+.row0 div,
+.row1 div,
+.row2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: gray;
+    border-color: white;
+    height: 100%;
+    width: 100%;
+    margin-left: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.row0 div:hover,
+.row1 div:hover,
+.row2 div:hover {
+    background-color: rgba(110, 110, 110, 0.508);
+}
+
+#resetBtn {
+    background-color: rgb(19, 131, 19);
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    transition: background-color 0.15s;
+}
+
+#resetBtn:hover {
+    background-color: rgba(19, 131, 19, 0.782);
+}
+
+#resetBtn:active {
+    background-color: rgba(35, 121, 35, 0.636);
+}
+
+#win{
+    margin: 0;
+    height: 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
